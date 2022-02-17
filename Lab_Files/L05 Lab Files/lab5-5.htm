@@ -12,7 +12,7 @@
 <hr />
 
 <script type="text/javascript">
-<!--
+
 
 /*********************************************************************
   On each iteration of the loop, use a document.write() statement to 
@@ -25,6 +25,15 @@
 
     document.write(i + "<br />");
   }
+  
+  while (i > 100) {
+    i--;
+
+    if(i % 7) continue;
+    document.write(i + " ");
+  
+  }
+  
 
 //-->
 </script>
