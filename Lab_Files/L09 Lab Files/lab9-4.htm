@@ -23,6 +23,15 @@
             }
             alert(div.id);  
             alert(div.special_attribute);   
+            alert(div.title);
+                var title = document.getElementById("SetDiv").getAttribute("title");
+                alert("getAttribute = " + title);
+                var title = document.getElementById("SetDiv");
+                title.setAttribute("title", "Changed Title");
+                alert("setAttribute changes title");
+                title.setAttribute("title", "Title changed again");
+                alert("setAttribute changes title");
+            
          }   
     </script>
 </body>

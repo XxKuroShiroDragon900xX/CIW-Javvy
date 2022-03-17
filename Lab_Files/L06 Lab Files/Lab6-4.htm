@@ -4,7 +4,6 @@
 <title>Lab 6-4</title>
 
 <script type="text/javascript">
-<!--
 
   function writeToDocument(){
     var textColor, backColor, pageTitle;
@@ -16,16 +15,16 @@
     yourText = prompt("Add content to the new document:", "page content");
 
     pageContent = "<html><head><title>";
-    pageContent += pageTitle + "</title>";
-    pageContent += "<script>alert('The page ' + document.title + ' was created: ' + document.lastModified)</script>";
-    pageContent += "</head><body><strong>";
-    pageContent += "</strong></body></html>";
+    pageContent += pageTitle + "<\title>";
+    pageContent += "alert('The page ' + document.title + ' was created: ' + document.lastModified)";
+    pageContent += "<\head><body><strong>";
+    pageContent += "<\strong><\body><\html>";
 
     docWindow = open("","docWin","width=250,height=150,resizable=1,status=1");
     // Write your code here
   }
   
-//-->
+
 </script>
 </head>
 
