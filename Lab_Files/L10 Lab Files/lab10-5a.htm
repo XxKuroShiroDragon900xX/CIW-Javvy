@@ -23,6 +23,7 @@
 	return false;}
         } 
         document.getElementById('lblValues').innerHTML = str;
+        document.forms[0].pwd.value;
     }
 </script>
 </head>
@@ -40,7 +41,7 @@ Your Name: <br /><br />
 Interesting Fact About You: <br /><br />
 <textarea id="Interesting_Fact" name="Interesting_Fact">enter some text</textarea>
 </p>
-<input type="button" value="Submit Data" onclick="return checkForm(this.form);" />
+<input type="button" value="Submit Data" onclick=" checkForm(this.form);" />
 <input type="reset" value="Reset Form" >
 
 </form>

@@ -4,15 +4,21 @@
 <meta charset=utf-8" />
 <title>Lab 10-5</title>
 <script type="text/javascript">
-    function checkForm()
-    {
+    function checkForm(){
+    
         var str = '';
         var elem = document.getElementById('myForm').elements;
 
-       //Insert for statement here//
+       for (var i =0; i < elem.length; i++) {
+        if (elem[i].value.length < 1){
+          alert("Enter something for the field:" + elem[i].name);
+          var mytext = document.getElementById(elem[i].name);
+          mytext.focus();
+          return false;
+        }
+      }
+    }
 
-
-     }
 </script>
 </head>
 
@@ -29,7 +35,7 @@ Your Name: <br /><br />
 Interesting Fact About You: <br /><br />
 <textarea name="Interesting_Fact" id="Interesting_Fact">enter some text</textarea>
 </p>
-<input type="submit" value="Submit Data" onclick="return checkForm(this.form);" />
+<input type="submit" value="Submit Data" onclick= " checkForm(this.form);" />
 
 </form>
 <hr />

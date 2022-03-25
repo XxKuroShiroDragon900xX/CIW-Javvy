@@ -3,13 +3,20 @@
 <head>
 <meta charset="utf-8" />
 <title>Lab 10-1</title>
-
+<script>
+  function chess(){
+      var aKing=document.myForm.fname.value;
+      var bKing=document.myForm.lname.value;
+      var cKing=document.myForm.gen.value;
+      var dKing=document.myForm.email.value;
+   alert("FIRST NAME:"+aKing+" "+"LAST NAME:"+bKing+" "+"GENDER:"+cKing+" "+"EMAIL: "+dKing);
+   }
 </script>
 </head>
 <body>
 <h3>CIW JavaScript Specialist</h3>
 <hr />
-<form name="myForm" id="myForm">
+<form name="myForm" id="zaQueen">
 	<label><b>Name</b></label>
     <input type="text" placeholder="FirstName" name="fname" required> 
 	<input type="text" placeholder="LastName" name="lname" required> <br />
@@ -20,8 +27,10 @@
 	 <label><b>Gender</b></label>
     <input type="radio" name="gen" value="male">Male
 	<input type="radio" name="gen" value="female">Female <br />
-    <input type="submit">
+    <input type="radio" name="gen" value="non-binary">Non-Binary<br />
     <input type="reset">
+    <input type="button" onclick="chess" id="chess" value="Submit">
 </form>
+
 </body>
 </html>
